@@ -1,0 +1,61 @@
+body{
+  font-family: "Roboto Slab", serif;
+}
+.menu-bar{
+  display: flex;
+  justify-content:space-between;
+  padding-top: 0;
+  margin-top: 0;
+  position: fixed; top: 0; left: 0; right: 0;
+  height: 60px;
+  background-color: rgb(201, 215, 215);
+}
+
+.icon-name-div{
+  display: flex;
+  justify-content: space-between;
+  width: 150px;
+}
+
+#icon {
+  height: 50px;
+  width: 50px
+}
+
+.menu-options{
+  display: flex;
+  justify-items: space-between;
+
+}
+
+.menu-items{
+  display: flex;
+  padding-right: 15px;
+}
+
+a{
+  text-decoration: none;
+  color: inherit;
+}
+
+a:hover {
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.welcome-div{
+  position: fixed; top: 0; left: 0; right: 0;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 60px;
+  background-image: url('./utils/cool-background.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  color: rgb(50, 40, 154);
+}
+
