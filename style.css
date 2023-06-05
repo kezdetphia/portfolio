@@ -8,7 +8,7 @@ body{
   margin-top: 0;
   position: fixed; top: 0; left: 0; right: 0;
   height: 60px;
-  background-color: rgb(201, 215, 215);
+  background-color: #deae55;
 }
 
 .icon-name-div{
@@ -46,10 +46,10 @@ a:hover {
 
 .welcome-div{
   position: fixed; top: 0; left: 0; right: 0;
-  height: 500px;
+  height: 850px;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  flex-direction: row;
+  justify-content:  space-between, center;
   align-items: center;
   margin-top: 60px;
   background-image: url('./utils/cool-background.png');
@@ -59,3 +59,47 @@ a:hover {
   color: rgb(50, 40, 154);
 }
 
+.introduction{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  padding-left: 18%;
+}
+
+
+.sm-links{
+  height: 30px;
+  width: 30px;
+  
+}
+
+.links {
+  display: flex;
+  flex-direction: column;
+  /* align-content: center;
+  justify-content: center; */
+  width: 100px;
+  padding-left: 10px;
+}
+
+#projbtn { 
+  background-color: #deae55;
+  border: none;
+  border-radius: 50%;
+  color: white;
+  padding: 12px 24px;
+  text-decoration: none;
+  display: inline-flex;
+  justify-content: center;
+  font-size: 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: 200px;
+  
+}
+
+#projbtn:hover {
+  background-color: #8974e8;
+}

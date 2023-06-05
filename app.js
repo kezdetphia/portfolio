@@ -20,8 +20,13 @@ $(()=>{
   const $contact = $('<h4>').text('contact').attr('class', 'menu-items').appendTo('.menu-options').wrap('<a href="https://www.google.com"></a>');
 
   //main
-  const $intro = $('<h1>').text("hi, i'm mark feher").attr('id', 'intro').appendTo('.welcome-div')
-  const $intro2 = $('<h3>').text(intro2).attr('id', 'intro2').appendTo('.welcome-div');
-  const $projbtn = $('<button>').text('projects').attr('id', 'projbtn').appendTo('.welcome-div')
+  const $intro = $('<h1>').text("hi, i'm mark feher").attr('id', 'intro').appendTo('.introduction')
+  const $intro2 = $('<h3>').text(intro2).attr('id', 'intro2').appendTo('.introduction');
+  const $projbtn = $('<button>').text('projects').attr('id', 'projbtn').appendTo('.introduction')
+
+  //main//links
+  const $linkedInImg = $('<img>').attr({'src' : 'utils/linkedin.png' , 'id' : 'linkedin-icon' ,'class': 'sm-links'} ).appendTo('.links').wrap('<a href="https://www.linkedin.com/in/mark-feher-3484a2182/"></a>');
+  const $gitHubImg = $('<img>').attr({'src' : 'utils/github.png' , 'id' : 'github-icon', 'class': 'sm-links' } ).appendTo('.links').wrap('<a href="https://github.com/kezdetphia"></a>');
+
 
 })
