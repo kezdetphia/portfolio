@@ -1,13 +1,7 @@
+//texts
 const intro2 = "I'm a visionary software engineer, crafting cutting-edge solutions and shaping the digital future with my code."
-
-
-
-
-
-
-
-
-
+const aboutMe = 'Here you will find more information about me, what I do, and my current skills mostly in terms of programming and technology '
+const getToKnowMe = `I'm a passionate Software Engineer specializing in developing robust and efficient software solutions. With expertise in building scalable applications, I craft top-notch backend systems. Check out my impressive software projects in the Portfolio section. I share knowledge and experience through valuable content on my blog and GitHub. Seeking exciting job opportunities that match my skills and ambitions. Let's collaborate in a dynamic and innovative environment. Connect and embark on a remarkable software engineering journey`
 
 
 $(()=>{
@@ -25,8 +19,17 @@ $(()=>{
   const $projbtn = $('<button>').text('projects').attr('id', 'projbtn').appendTo('.introduction')
 
   //main//links
-  const $linkedInImg = $('<img>').attr({'src' : 'utils/linkedin.png' , 'id' : 'linkedin-icon' ,'class': 'sm-links'} ).appendTo('.links').wrap('<a href="https://www.linkedin.com/in/mark-feher-3484a2182/"></a>');
+  const $linkedInImg = $('<img>').attr({'src' : 'utils/link.png' , 'id' : 'linkedin-icon' ,'class': 'sm-links'} ).appendTo('.links').wrap('<a href="https://www.linkedin.com/in/mark-feher-3484a2182/"></a>');
   const $gitHubImg = $('<img>').attr({'src' : 'utils/github.png' , 'id' : 'github-icon', 'class': 'sm-links' } ).appendTo('.links').wrap('<a href="https://github.com/kezdetphia"></a>');
+  const $instaImg = $('<img>').attr({'src' : 'utils/insta.png' , 'id' : 'insta-icon', 'class': 'sm-links' } ).appendTo('.links').wrap('<a href="https://github.com/kezdetphia"></a>');
+  const $faceImg = $('<img>').attr({'src' : 'utils/facebook(1).png' , 'id' : 'face-icon', 'class': 'sm-links' } ).appendTo('.links').wrap('<a href="https://github.com/kezdetphia"></a>');
+
+  //aboutMe
+  const $aboutMe = $('<h1>').text('about me').appendTo('.about-me-intro')
+  const aboutMeText = $('<h3>').text(aboutMe).appendTo('.about-me-intro')
+  //from here im adding the html in the html file
+  $('#know-me-p').text(getToKnowMe)
+
 
 
 })

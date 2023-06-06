@@ -1,12 +1,14 @@
 body{
   font-family: "Roboto Slab", serif;
+  margin: 0;
+  padding: 0;;
 }
 .menu-bar{
   display: flex;
   justify-content:space-between;
   padding-top: 0;
   margin-top: 0;
-  position: fixed; top: 0; left: 0; right: 0;
+  /* position: sticky; top: 0; left: 0; right: 0; */
   height: 60px;
   background-color: #deae55;
 }
@@ -25,7 +27,6 @@ body{
 .menu-options{
   display: flex;
   justify-items: space-between;
-
 }
 
 .menu-items{
@@ -45,13 +46,15 @@ a:hover {
 }
 
 .welcome-div{
-  position: fixed; top: 0; left: 0; right: 0;
+  /* position: fixed; top: 0; left: 0; right: 0; */
+  padding-top: 0;
+  margin-top: 0;
   height: 850px;
   display: flex;
   flex-direction: row;
   justify-content:  space-between, center;
   align-items: center;
-  margin-top: 60px;
+  /* margin-top: 60px; */
   background-image: url('./utils/cool-background.png');
   background-size: cover;
   background-repeat: no-repeat;
@@ -102,4 +105,39 @@ a:hover {
 
 #projbtn:hover {
   background-color: #8974e8;
+}
+
+.about-me{
+  height:850px;
+  display: flex;
+  flex-direction: column;
+  
+}
+
+.about-me-intro{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  margin-top: 8%;
+}
+
+.about-me-body{
+  padding-top: 8%;
+  display: flex;
+  /* justify-content: space-around; */
+}
+#about-me-body-left{
+  width: 30%;
+  padding-left: 5%;
+}
+
+#know-me-p{
+  text-indent: 0;
+}
+
+#about-me-body-right{
+  /* width: 30%; */
+  align-items: flex-end;
+ 
 }
