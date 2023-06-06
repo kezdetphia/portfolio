@@ -10,7 +10,9 @@ body{
   margin-top: 0;
   /* position: sticky; top: 0; left: 0; right: 0; */
   height: 60px;
-  background-color: #deae55;
+  /* background-color: #817f7f; */
+  background: rgb(219,181,48);
+  background: linear-gradient(0deg, rgba(219,181,48,1) 0%, rgba(129,127,127,1) 55%); 
 }
 
 .icon-name-div{
@@ -86,8 +88,8 @@ a:hover {
   padding-left: 10px;
 }
 
-#projbtn { 
-  background-color: #deae55;
+button { 
+  background-color: #817f7f;
   border: none;
   border-radius: 50%;
   color: white;
@@ -103,7 +105,7 @@ a:hover {
   
 }
 
-#projbtn:hover {
+button:hover {
   background-color: #8974e8;
 }
 
@@ -111,7 +113,9 @@ a:hover {
   height:850px;
   display: flex;
   flex-direction: column;
-  
+  /* background-color: #ccc; */
+  background-color: #ccc;
+
 }
 
 .about-me-intro{
@@ -138,6 +142,124 @@ a:hover {
 
 #about-me-body-right{
   /* width: 30%; */
-  align-items: flex-end;
+
+  
  
+}
+
+.text-box {
+  display: inline-block;
+  padding: 5px;
+  margin: 5px;
+  background-color: #f0f0f0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+#skills-container {
+  text-align: center;
+}
+
+
+
+/* modal */
+
+#modal {
+	background-color: rgba(0,0,0,0.4);
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	z-index: 1;
+	/*This puts our modal in front of the body (which has a default z-index setting of `0`*/
+	overflow: auto;
+	/*If overflow is clipped, a scroll-bar should be added to see the rest of the content*/
+	display: none;
+	/*Set this to `none` so that the modal does not show initially on page load.*/
+}
+
+#modal-textbox {
+	background-color: white;
+	height: 350px;
+	width: 550px;
+	border-radius: 2px;
+	margin: 150px auto;
+	/*This will set the margins for the top and the bottom to 150px (or larger). The right and left will automatically set themselves (and keep the box centered horizontally).*/
+	box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+	/*This will give the box some depth.*/
+	padding: 2%;
+	line-height: 120%;
+}
+
+#modal-footer {
+	text-align: right;
+}
+
+h1 {
+	padding-bottom: 15px;
+}
+
+.projects{
+    height:850px;
+    /* display: flex;
+    flex-direction: column; */
+    background-color: #d6d3d3;
+}
+
+
+.projects-intro{
+  text-align: center;
+
+}
+
+.projects-intro h1{
+  margin: 0;
+  padding-top: 8%
+
+}
+
+
+.carousel {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  padding-top: 8%
+
+}
+
+.carousel-inner {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.carousel-inner img {
+  width: 100%;
+}
+
+.carousel-prev,
+.carousel-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 10px;
+  background-color: #000;
+  color: #fff;
+  text-decoration: none;
+  z-index: 1;
+}
+
+.carousel-prev {
+  left: 10px;
+}
+
+.carousel-next {
+  right: 10px;
+}
+
+
+#carousel-img {
+	height: 300px;
+	width: 600px;
+
 }
