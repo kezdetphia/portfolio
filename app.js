@@ -21,6 +21,7 @@ const loadLayOut=()=>{
   const $about = $('<h4>').text('about').attr('class', 'menu-items').appendTo('.menu-options').wrap('<a class="scroll-link" href=".about-me" ></a>');
   const $projects = $('<h4>').text('projects').attr('class', 'menu-items').appendTo('.menu-options').wrap('<a class="scroll-link" href=".projects"></a>');
   const $contact = $('<h4>').text('contact').attr({'class': 'menu-items', 'id': 'openModal'} ).appendTo('.menu-options').wrap('<a href="#"></a>');
+  
 
   //main
   const $intro = $('<h1>').text("hi, i'm mark feher").attr('id', 'intro').appendTo('.introduction')
@@ -35,7 +36,7 @@ const loadLayOut=()=>{
   const $instaImg = $('<img>').attr({'src' : 'utils/insta.png' , 'id' : 'insta-icon', 'class': 'sm-links' } ).appendTo('.links').wrap('<a href="https://github.com/kezdetphia" target="_blank"></a>');
   $instaImg.clone().appendTo('.footer-right-icon').wrap('<a href="https://github.com/kezdetphia" target="_blank"></a>');
   const $faceImg = $('<img>').attr({'src' : 'utils/facebook(1).png' , 'id' : 'face-icon', 'class': 'sm-links' } ).appendTo('.links').wrap('<a href="https://github.com/kezdetphia" target="_blank"></a>');
-  $faceImg.clone().appendTo('.footer-right-icon').wrap('<a href="https://github.com/kezdetphia" target="_blank"></a>');
+  
 
   //aboutMe
   const $aboutMe = $('<h1>').text('about me.').appendTo('.about-me-intro')
