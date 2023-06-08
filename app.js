@@ -17,10 +17,12 @@ const loadLayOut=()=>{
   //menubar 
   const $icon= $('<img>').attr({'src' : '/Users/WorkSpace/code/portfolio/utils/atom.png', 'id' : 'icon'} ).appendTo('.icon-name-div').click(() => location.reload());
   const $name= $('<h4>').text('mark feher').attr({'id': 'name',}).appendTo('.icon-name-div').wrap('<a href="#"></a>').parent().on('click', () => window.location.reload());
+  // <a href="resume.html" target="_blank">resume</a>
   const $home = $('<h4>').text('home').attr('class', 'menu-items').appendTo('.menu-options').wrap('<a href="#"></a>').parent().on('click', () => window.location.reload());
   const $about = $('<h4>').text('about').attr('class', 'menu-items').appendTo('.menu-options').wrap('<a class="scroll-link" href=".about-me" ></a>');
   const $projects = $('<h4>').text('projects').attr('class', 'menu-items').appendTo('.menu-options').wrap('<a class="scroll-link" href=".projects"></a>');
-  const $contact = $('<h4>').text('contact').attr({'class': 'menu-items', 'id': 'openModal'} ).appendTo('.menu-options').wrap('<a href="#"></a>');
+  const $resume = $('<h4>').text('resume').attr('class', 'menu-items').appendTo('.menu-options').wrap('<a href="resume.html" target="_blank"></a>');
+  // const $contact = $('<h4>').text('contact').attr({'class': 'menu-items', 'id': 'openModal'} ).appendTo('.menu-options').wrap('<a href="#"></a>');
   
 
   //main

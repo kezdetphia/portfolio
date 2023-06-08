@@ -48,11 +48,13 @@ a:hover {
 .menu-options{
   display: flex;
   justify-items: space-between;
+  width: 15%;
 }
 
 .menu-items{
   display: flex;
   padding-right: 15px;
+
 }
 
 
