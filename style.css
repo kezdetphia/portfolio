@@ -1,16 +1,35 @@
-body{
+ body{
   font-family: "Roboto Slab", serif;
   margin: 0;
   padding: 0;;
 }
+
+a{
+  text-decoration: none;
+  color: inherit;
+}
+
+a:hover {
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+#icon{
+  cursor: pointer;
+ }
+
+
+
 .menu-bar{
+  position: fixed;
+  width:100%;
+  /* z-index: 9999; */
   display: flex;
   justify-content:space-between;
   padding-top: 0;
   margin-top: 0;
-  /* position: sticky; top: 0; left: 0; right: 0; */
   height: 60px;
-  /* background-color: #817f7f; */
   background: rgb(219,181,48);
   background: linear-gradient(0deg, rgba(219,181,48,1) 0%, rgba(129,127,127,1) 55%); 
 }
@@ -36,32 +55,25 @@ body{
   padding-right: 15px;
 }
 
-a{
-  text-decoration: none;
-  color: inherit;
-}
 
-a:hover {
-  color: white;
-  text-decoration: none;
-  cursor: pointer;
-}
 
 .welcome-div{
-  /* position: fixed; top: 0; left: 0; right: 0; */
   padding-top: 0;
   margin-top: 0;
-  height: 850px;
+  height: 880px;
   display: flex;
   flex-direction: row;
   justify-content:  space-between, center;
   align-items: center;
-  /* margin-top: 60px; */
   background-image: url('./utils/cool-background.png');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   color: rgb(50, 40, 154);
+}
+
+.welcome-div h1{
+  color: black;
 }
 
 .introduction{
@@ -82,8 +94,6 @@ a:hover {
 .links {
   display: flex;
   flex-direction: column;
-  /* align-content: center;
-  justify-content: center; */
   width: 100px;
   padding-left: 10px;
 }
@@ -112,10 +122,9 @@ button:hover {
 }
 
 .about-me{
-  height:850px;
+  height:880px;
   display: flex;
   flex-direction: column;
-  /* background-color: #ccc; */
   background-color: #ccc;
 
 }
@@ -131,7 +140,7 @@ button:hover {
 .about-me-body{
   padding-top: 8%;
   display: flex;
-  /* justify-content: space-around; */
+  justify-content: space-around;
 }
 #about-me-body-left{
   width: 30%;
@@ -142,12 +151,7 @@ button:hover {
   text-indent: 0;
 }
 
-#about-me-body-right{
-  /* width: 30%; */
 
-  
- 
-}
 
 .text-box {
   display: inline-block;
@@ -159,12 +163,21 @@ button:hover {
 }
 
 #skills-container {
+  display: flex;
+  flex: wrap;
+  /* width: 600px */
+  text-align: center;
+}
+
+.text-box{
+  width: 25%;
+  box-sizing: border-box;
+  padding: 10px;
   text-align: center;
 }
 
 
 
-/* modal */
 
 #modal {
 	background-color: rgba(0,0,0,0.4);
@@ -174,11 +187,8 @@ button:hover {
 	height: 100%;
 	width: 100%;
 	z-index: 1;
-	/*This puts our modal in front of the body (which has a default z-index setting of `0`*/
 	overflow: auto;
-	/*If overflow is clipped, a scroll-bar should be added to see the rest of the content*/
 	display: none;
-	/*Set this to `none` so that the modal does not show initially on page load.*/
 }
 
 #modal-textbox {
@@ -187,9 +197,7 @@ button:hover {
 	width: 550px;
 	border-radius: 2px;
 	margin: 150px auto;
-	/*This will set the margins for the top and the bottom to 150px (or larger). The right and left will automatically set themselves (and keep the box centered horizontally).*/
 	box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
-	/*This will give the box some depth.*/
 	padding: 2%;
 	line-height: 120%;
 }
@@ -198,9 +206,14 @@ button:hover {
 	text-align: right;
 }
 
-/* ------------ */
 
-/* PROJECTS MODAL2 */
+
+
+
+
+
+
+
 #modal2 {
 	background-color: rgba(0,0,0,0.4);
 	position: fixed;
@@ -209,18 +222,16 @@ button:hover {
 	height: 100%;
 	width: 100%;
 	z-index: 1;
-	/*This puts our modal in front of the body (which has a default z-index setting of `0`*/
 	overflow: auto;
-	/*If overflow is clipped, a scroll-bar should be added to see the rest of the content*/
 	display: none;
-	/*Set this to `none` so that the modal does not show initially on page load.*/
 }
-
 
 #modal-footer2 {
 	text-align: right;
 }
-/* PROJECTS MODAL2 */
+
+
+
 
 
 h1 {
@@ -229,10 +240,11 @@ h1 {
 
 
 .projects{
-    height:850px;
-    /* display: flex;
-    flex-direction: column; */
+    height:870px;
     background-color: #d6d3d3;
+    /* padding-bottom: 100px; */
+    
+    
 }
 
 
@@ -252,7 +264,8 @@ h1 {
   position: relative;
   width: 100%;
   overflow: hidden;
-  padding-top: 8%
+  padding-top: 8%;
+ 
 
 }
 
@@ -292,6 +305,38 @@ h1 {
 
 }
 
-.invert-colors{
+.footer{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 400px;
+  background-color: #272525;
+  margin-top: 0;
+  color: #ccc;
+}
 
+
+.footer-left{
+  width: 50%;
+ 
+}
+
+.footer-right{
+  width: 50%;
+}
+
+.footer-right-icon{
+  display: flex;
+  justify-content:space-evenly;
+  align-content: center;
+}
+
+.footer-right-text{
+  text-align: center;
+  padding-bottom: 10%;
+}
+
+.footer-left-text{
+  padding-bottom: 10%;
+  text-align: center;
 }
